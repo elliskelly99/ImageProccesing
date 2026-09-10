@@ -365,19 +365,4 @@ void utility::colorstretch(image &src, image &tgt, int c, int a,int b)
 			
 		}//j loop
 	}//i loop
-
-		// for (int i=0; i<src.getNumberOfRows(); i++){
-		// 	for (int j=0; j<src.getNumberOfColumns(); j++)
-		// 	{
-				
-		// 		tgt.setPixel(i,j,RED,(src.getPixel(i,j,RED)));
-		// 		tgt.setPixel(i,j,GREEN,(src.getPixel(i,j,GREEN)));
-		// 		tgt.setPixel(i,j,BLUE,(src.getPixel(i,j,BLUE)));
-
-
-
-		// 	}//j loop
-		// }
-	
-
 }
