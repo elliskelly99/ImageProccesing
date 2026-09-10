@@ -115,26 +115,14 @@ void utility::colorvisual(image &src, image &tgt, int threshold,int value)
 		{
 			// |V1  –  I(I,j)|  <  T1
 			if(abs((value-src.getPixel(i,j)))< threshold){
-		//	if (src.getPixel(i,j) < threshold){
-					//tgt.setPixel(i,j,checkValue(src.getPixel(i,j)));
 					tgt.setPixel(i,j,RED,255);
-					//tgt.setPixel(i,j,GREEN,0);
-					//tgt.setPixel(i,j,BLUE,0);
 
 
 			}
 			else{
 				tgt.setPixel(i,j,checkValue(src.getPixel(i,j)));
 			}
-			// tgt.setPixel(i,j,GREEN,0); 
-			// tgt.setPixel(i,j,BLUE,0); 
 
-
-			//tgt.setPixel(i,j,1,checkValue(src.getPixel(i,j,1)+value)); 
-			//tgt.setPixel(i,j,2,checkValue(src.getPixel(i,j,2)+value)); 
-
-
-			//tgt.setPixel(i,j,checkValue(src.getPixel(i,j)+value)); 
 
 		}
 	}
